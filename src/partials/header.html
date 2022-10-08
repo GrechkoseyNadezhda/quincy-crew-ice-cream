@@ -23,8 +23,20 @@
           <a href="#contacts">Contact</a>
         </li>
       </ul>
+      <!-- Header BURGER button that opens navigation menu -->
+      <button class="menu-btn" data-menu-button>
+        <svg width="32" height="32">
+          <use href="./icons/icons.svg#burger"></use>
+        </svg>
+      </button>
+
       <!-- Header BUY NOW button -->
-      <button class="btn" type="submit" some-attribute>Buy now</button>
+      <button class="btn" type="button" some-attribute>
+        Buy now
+        <svg width="12" height="12">
+          <use href="./icons/icons.svg#arrowhead"></use>
+        </svg>
+      </button>
 
       <!-- -------------------------------------------------------- -->
       <!-- Header navigation panel for TABLETS -->
@@ -36,6 +48,11 @@
             alt="Logo og the Ice Cream Company"
           />
         </a>
+        <button type="button">
+          <svg width="32" height="32">
+            <use href="./icons/icons.svg#burger-close"></use>
+          </svg>
+        </button>
         <ul class="header__nav_list header__nav_list--tablet">
           <li class="header__list-item">
             <a href="#header">Home</a>
@@ -63,6 +80,11 @@
             alt="Logo og the Ice Cream Company"
           />
         </a>
+        <button type="button">
+          <svg width="32" height="32">
+            <use href="./icons/icons.svg#burger-close"></use>
+          </svg>
+        </button>
         <ul class="header__nav_list header__nav_list--mobile">
           <li class="header__list-item">
             <a href="#header">Home</a>
@@ -77,7 +99,12 @@
             <a href="#contacts">Contact</a>
           </li>
         </ul>
-        <button class="btn" type="submit" some-attribute>Buy now</button>
+        <button class="btn" type="submit" some-attribute>
+          Buy now
+          <svg width="12" height="12">
+            <use href="./icons/icons.svg#arrowhead"></use>
+          </svg>
+        </button>
       </div>
       <!-- -------------------------------------------------------- -->
     </nav>
