@@ -7,6 +7,7 @@
   display: flex;
   align-items: center;
   text-align: center;
+  cursor: pointer;
   color: $page-color;
   @include transition(background, color);
 
@@ -31,6 +32,7 @@
   align-items: center;
   text-align: center;
   color: $page-color;
+  cursor: pointer;
   border: 2px solid $accent-color;
   @include transition(border, color);
 
@@ -54,6 +56,7 @@
   display: flex;
   align-items: center;
   text-align: center;
+  cursor: pointer;
   color: $page-color;
   @include transition(color);
 
