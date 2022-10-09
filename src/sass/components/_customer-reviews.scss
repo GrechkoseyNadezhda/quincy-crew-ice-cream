@@ -1,5 +1,8 @@
 .customer-reviews {
-  padding-top: 75px;
+  position: absolute;
+  width: 100%;
+  top: 24px;
+  padding-top: 181px;
   padding-bottom: 48px;
   background-repeat: no-repeat;
   background-position: center;
@@ -12,6 +15,22 @@
     (min-resolution: 2dppx) {
     background-image: url(/src/images/сustomer-reviews/review-bg@2x.jpg);
   }
+
+  @media screen and (min-width: 480px) {
+    top: 50px;
+    padding-top: 200px;
+  }
+
+  @media screen and (min-width: 768px) {
+    top: 165px;
+    padding-top: 223px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    top: 98px;
+    padding-top: 447px;
+  }
+
   &__list {
     position: relative;
     margin: 0 auto;
@@ -20,8 +39,10 @@
   }
   &__item {
     position: absolute;
+    top: 0;
     opacity: 0;
     width: 100%;
+    @include transition(opacity);
 
     &.active {
       position: static;
