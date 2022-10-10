@@ -6,6 +6,6 @@
 
 @mixin transition-slow($property...) {
   transition-property: $property;
-  transition-duration: 750ms;
+  transition-duration: 1000ms;
   transition-timing-function: linear;
 }
