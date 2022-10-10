@@ -1,0 +1,58 @@
+.section-wrap {
+  position: relative;
+}
+
+.gallery {
+  height: 130px;
+  background-color: $main-bg-color;
+
+  @media screen and (min-width: 480px) {
+    height: 199px;
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 327px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 422px;
+  }
+
+  &__list {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1013px;
+    width: 100%;
+    z-index: 1;
+  }
+  &__item {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    @include transition-slow(opacity);
+
+    &.active {
+      opacity: 1;
+    }
+  }
+  &__img {
+    margin: 0 auto;
+    border-radius: 7px;
+    height: 130px;
+    width: auto;
+
+    @media screen and (min-width: 480px) {
+      height: 199px;
+      border-radius: 18px;
+    }
+
+    @media screen and (min-width: 768px) {
+      height: 327px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      height: 422px;
+      border-radius: 24px;
+    }
+  }
+}
