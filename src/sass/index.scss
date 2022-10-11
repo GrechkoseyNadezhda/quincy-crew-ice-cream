@@ -4,8 +4,10 @@
 @import './utils/reset';
 @import './utils/mixins';
 
-@import './components/btns';
-@import './components/titles';
+@import './base/btns';
+@import './base/titles';
+@import './base/form';
+
 @import './components/header';
 @import './components/hero';
 @import './components/products';
