@@ -1,0 +1,53 @@
+.about {
+    background-color: #84a178;
+    align-items: center;
+    text-align: center;
+}
+
+.about__subtitle {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.22;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FCFCFC
+}
+
+.about__title {
+    margin-bottom: 32px;
+    font-family: 'Seymour One';
+    font-size: 30px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FCFCFC;
+}
+
+.about__wrap {
+    margin: 0 auto;
+    max-width: 280px;
+}
+
+.about__image {
+    width: 333px;
+    height: 330px;
+}
+
+.about__text {
+    font-size: 12px;
+    line-height: 176%;
+    letter-spacing: 0.04em;
+    color: #fcfcfc;
+}
+
+.about__text:last-child {
+    margin-bottom: 20px;
+}
+
+.about__button {
+    width: 164px;
+    height: 42px;
+    background-color: #F8D24E;
+    border-radius: 10px;
+    padding: 12px 24px;
+}
