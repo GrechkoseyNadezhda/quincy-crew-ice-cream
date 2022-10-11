@@ -2,6 +2,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   letter-spacing: 0.04em;
+  background-color: $main-bg-color;
 }
 
 h1,
@@ -35,6 +36,10 @@ img {
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
 
   @media screen and (min-width: 768px) {
     width: 768px;

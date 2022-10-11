@@ -1,0 +1,55 @@
+.about {
+    background-color: #84a178;
+    align-items: center;
+    text-align: center;
+}
+
+.about__subtitle {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.22;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.about__title {
+    font-family: 'Seymour One';
+    font-size: 30px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: 0.04em;
+}
+
+.about__wrap {
+    position: relative;
+    width: 333px;
+    height: 330px;
+    background-color: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+    box-shadow: 0px 5.30813px 19.9055px rgba(153, 114, 23, 0.25);
+    border-radius: 50%;
+}
+
+.about__image {
+    position: absolute;
+    bottom: 25px;
+    width: 333px;
+    height: 330px;
+}
+
+.about__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 176%;
+    /* or 21px */
+    letter-spacing: 0.04em;
+    color: #fcfcfc;
+}
+
+.about__button {
+    width: 164px;
+    height: 42px;
+    background-color: #F8D24E;
+    border-radius: 10px;
+    padding: 12px 24px;
+}

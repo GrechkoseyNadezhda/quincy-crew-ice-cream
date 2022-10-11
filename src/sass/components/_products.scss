@@ -1,0 +1,119 @@
+.products {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.products-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 164px;
+}
+
+.products__title {
+  margin-bottom: 156px;
+}
+
+.products__subtitle {
+  color: $page-color;
+}
+
+.product-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  height: 420px;
+  border-radius: 24px;
+
+  padding-top: 123px;
+  padding-bottom: 12px;
+}
+
+.product-card--green {
+  background-color: #aec6a5;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -46%);
+    min-width: 242px;
+    min-height: 241px;
+    background-image: url(../images/products/img-1_sm.png);
+    background-size: contain;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/products/img-1_sm@2x.png');
+    }
+  }
+}
+
+.product-card--yellow {
+  background-color: #efd478;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -46%);
+    min-width: 242px;
+    min-height: 241px;
+    background-image: url(../images/products/img-2_sm.png);
+    background-size: contain;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/products/img-2_sm@2x.png');
+    }
+  }
+}
+
+.product-card--brown {
+  background-color: #d6936d;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -46%);
+    min-width: 242px;
+    min-height: 241px;
+    background-image: url(../images/products/img-3_sm.png);
+    background-size: contain;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/products/img-3_sm@2x.png');
+    }
+  }
+}
+
+.product-card__title {
+  margin-bottom: 40px;
+
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  text-align: center;
+  text-transform: uppercase;
+
+  color: $page-color;
+}
+
+.product-card__text {
+  line-height: 1.76;
+  width: 200px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.product-card__button {
+  margin-top: auto;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
