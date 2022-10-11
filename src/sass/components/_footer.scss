@@ -137,6 +137,20 @@
   }
 }
 
+.social__link {
+  &:focus .social__icon {
+    fill: $light-color;
+    width: 38px;
+    height: 38px;
+  }
+
+  &:hover .social__icon {
+    fill: $light-color;
+    width: 32px;
+    height: 32px;
+  }
+}
+
 .social-contacts__phone {
   display: block;
   text-align: right;
