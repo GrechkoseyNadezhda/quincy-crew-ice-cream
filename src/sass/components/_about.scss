@@ -45,9 +45,23 @@
 }
 
 .about__button {
-    width: 164px;
-    height: 42px;
-    background-color: #F8D24E;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 10px;
     padding: 12px 24px;
+    width: 164px;
+    height: 42px;
+    font-weight: 600;
+    line-height: 1.28;
+    background-color: #F8D24E;
+}
+
+.about__button::after {
+    content: '';
+    display: block;
+    margin-left: 5px;
+    width: 12px;
+    height: 12px;
+    background-image: url(../images/about/button.png);
 }
