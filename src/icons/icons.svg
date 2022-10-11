@@ -27,5 +27,9 @@
     <symbol id="arrowhead" width="12" height="12" viewBox="0 0 12 12" fill="none">
       <path d="M4 2L8.95 6L4 10" stroke="#131313" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
+    <symbol id="about__icon" width="12" height="12" viewBox="0 0 12 12" fill="none">
+            <path d="M4 2L8.94845 6L4 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </symbol>
   </defs>
 </svg>
