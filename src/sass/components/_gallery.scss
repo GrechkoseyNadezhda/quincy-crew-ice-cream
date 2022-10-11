@@ -1,7 +1,7 @@
 .section-wrap {
   background-repeat: no-repeat, no-repeat, repeat;
   background-position: top, bottom, center;
-  background-size: 100% 24px, 100% 1100px, contain;
+  background-size: 100% 24px, 100% 1065px, contain;
   background-image: linear-gradient(to bottom, $main-bg-color, $main-bg-color),
     linear-gradient(to bottom, $main-bg-color, $main-bg-color),
     url(/src/images/сustomer-reviews/review-bg.jpg);
@@ -14,61 +14,55 @@
   }
 
   @media screen and (min-width: 480px) {
-    background-size: 100% 60px, 100% 550px, contain;
+    background-size: 100% 60px, 100% 1065px, contain;
   }
 
   @media screen and (min-width: 768px) {
-    background-size: 100% 164px, 100% 366px, contain;
+    background-size: 100% 164px, 100% 326px, contain;
   }
 
   @media screen and (min-width: 1200px) {
-    background-size: 100% 94px, 100% 668px, contain;
+    background-size: 100% 94px, 100% 548px, contain;
   }
 }
 
 .gallery {
   &__list {
+    margin: 0 auto;
     position: relative;
     height: 150px;
+    background-color: $light-color;
+    border-radius: 7px;
+    overflow: hidden;
 
     @media screen and (min-width: 480px) {
       height: 200px;
-    }
-
-    @media screen and (min-width: 768px) {
-      height: 330px;
-    }
-
-    @media screen and (min-width: 1200px) {
-      height: 450px;
-    }
-  }
-  &__item {
-    position: absolute;
-
-    right: 50%;
-    transform: translateX(50%);
-    top: 0;
-    opacity: 0;
-    overflow: hidden;
-    height: 100%;
-    width: 100%;
-    @include transition-slow(opacity);
-
-    @media screen and (min-width: 480px) {
       border-radius: 12px;
       width: 440px;
     }
 
     @media screen and (min-width: 768px) {
+      height: 330px;
       border-radius: 18px;
       width: 704px;
     }
 
     @media screen and (min-width: 1200px) {
+      height: 450px;
       border-radius: 24px;
       width: 1020px;
     }
+  }
+  &__item {
+    position: absolute;
+    width: 100%;
+    right: 50%;
+    transform: translateX(50%);
+    top: 0;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    @include transition-slow(opacity);
 
     &.active {
       opacity: 1;
