@@ -5,6 +5,7 @@
 }
 
 .about__subtitle {
+    margin-bottom: 12px;
     font-weight: 700;
     font-size: 18px;
     line-height: 1.22;
@@ -14,6 +15,8 @@
 }
 
 .about__title {
+    margin: 0 auto;
+    width: 200px;
     margin-bottom: 32px;
     font-family: 'Seymour One';
     font-size: 30px;
@@ -21,15 +24,25 @@
     text-align: center;
     letter-spacing: 0.04em;
     color: #FCFCFC;
+    @media screen and (min-width: 480px) {
+        width: auto;
+    }
+}
+
+.about__wrapper {
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
 }
 
 .about__wrap {
     margin: 0 auto;
+    margin-bottom: 40px;
     max-width: 280px;
 }
 
 .about__image {
-    width: 333px;
+    width: 360px;
     height: 330px;
 }
 
@@ -40,11 +53,12 @@
     color: #fcfcfc;
 }
 
-.about__text:last-child {
+.textwrap-item:last-child {
     margin-bottom: 20px;
 }
 
 .about__button {
+    margin-bottom: 40px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -55,13 +69,18 @@
     font-weight: 600;
     line-height: 1.28;
     background-color: #F8D24E;
+    border: none;
+    cursor: pointer;
+    transition: 0.25s;
+    &:hover {
+        background-color: #0A8817;
+    }
+    &:focus {
+        background-color: #0A8817;
+        color: $light-color;
+    }
 }
 
-.about__button::after {
-    content: '';
-    display: block;
+.about__icon {
     margin-left: 5px;
-    width: 12px;
-    height: 12px;
-    background-image: url(../images/about/button.png);
 }

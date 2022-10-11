@@ -10,20 +10,24 @@
 .advantages__item {
     justify-content: center;
     align-items: center;
+    margin-bottom: 27px;
 }
 
 .cow::before {
     content: "";
     display: block;
+    margin: 0 auto;
+    margin-bottom: 16px;
     width: 50px;
     height: 50px;
     background-image: url(../images/advantages/cow.png);
-    align-items: center;
 }
 
 .weight::before {
     content: "";
     display: block;
+    margin: 0 auto;
+    margin-bottom: 16px;
     width: 50px;
     height: 50px;
     background-image: url(../images/advantages/weight.png);
@@ -32,11 +36,29 @@
 .ice::before {
     content: "";
     display: block;
+    margin: 0 auto;
+    margin-bottom: 16px;
     width: 50px;
     height: 50px;
     background-image: url(../images/advantages/ice.png);
 }
 
-.advantages__uppertext {}
+.advantages__uppertext {
+    margin-bottom: 16px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
 
-.advantages__text {}
+.advantages__text {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 170%;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
