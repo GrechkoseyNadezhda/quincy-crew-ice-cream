@@ -336,29 +336,6 @@
   border: 2px solid $accent-color;
   border-radius: 10px;
 
-  &::before {
-    content: '';
-    position: absolute;
-    top: 111px;
-    left: 60px;
-
-    min-width: 172px;
-    min-height: 171px;
-    background-image: url(../images/products/ingredients.png);
-    background-size: contain;
-
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url('../images/products/ingredients@2x.png');
-    }
-
-    @media screen and(min-width: 768px) {
-      top: 91px;
-      left: 115px;
-    }
-  }
-
   .modal-form__label--mail {
     display: none;
   }
@@ -401,10 +378,36 @@
 }
 
 .grid-ingredients {
+  position: relative;
   display: flex;
   justify-content: center;
   gap: 9px;
   margin-bottom: 39px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -165px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    min-width: 172px;
+    min-height: 171px;
+    background-image: url(../images/products/ingredients.png);
+    background-size: contain;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/products/ingredients@2x.png');
+    }
+
+    // @media screen and(min-width: 768px) {
+    //   top: 91px;
+    //   left: 115px;
+    // }
+  }
 
   @media screen and(min-width: 768px) {
     gap: 20px;
