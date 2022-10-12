@@ -16,6 +16,10 @@
   @include transition-slow(opasity);
 }
 
+.overflow {
+  overflow: hidden;
+}
+
 .header-modal {
   position: relative;
   margin: 0 auto;
