@@ -22,6 +22,7 @@
 
 .header__nav_list {
   display: none;
+  z-index: 10;
 
   @media screen and (min-width: 1200px) {
     display: flex;
@@ -57,15 +58,16 @@
   background: transparent;
   border: none;
   cursor: pointer;
+  z-index: 10;
 
   @media screen and (min-width: 1200px) {
     display: none;
-    // margin: auto 0 auto 32px;
   }
 }
 
 .header__buy-now {
   display: none;
+  z-index: 10;
 
   @media screen and (min-width: 768px) {
     display: block;
@@ -73,6 +75,96 @@
   }
 }
 
+// ----------------------------------
+// SLIDING MENU
+// ----------------------------------
+
+// .header__btn-open.is-open + .header__sliding-menu {
+//   transform: translateX(0);
+// }
+// .header__btn-open + .header__sliding-menu {
+//   transform: translateX(200%);
+// }
+
 .header__sliding-menu {
-  display: none;
+  display: block;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: $main-bg-color;
+  display: flex;
+  flex-direction: column;
+  z-index: 999;
+  transform: translateX(101%);
+
+  &.is-open {
+    transform: translateX(0);
+  }
+
+  // @media screen and (min-width: 320px) {
+  //   &.is-open {
+  //     display: block;
+  //   }
+  // }
+  // @media screen and (min-width: 1200px) {
+  //   display: none;
+  // }
+}
+
+.header__slidin-menu-top {
+  display: flex;
+}
+
+.header__logo-link {
+  margin-right: auto;
+  margin-left: 31px;
+}
+
+.header__burger-close {
+  margin: auto 0 auto auto;
+  padding: 10px 10px;
+  margin-right: 21px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: $page-color;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.header__nav_list--mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  padding-top: 36px;
+  padding-bottom: 111px;
+}
+
+.header__list-item {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: calc(39 / 32);
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.header__slider-link {
+  color: #fcfcfc;
+}
+
+.current {
+  color: #131313;
+}
+
+.header__sliding-menu-bottom {
+  display: flex;
+  justify-content: center;
 }
