@@ -24,14 +24,19 @@
         </li>
       </ul>
       <!-- Header BURGER button that opens navigation menu -->
-      <button class="header__btn-open" data-menu-button>
+      <button class="header__btn-open" data-menu-open>
         <svg width="32" height="32">
           <use href="./icons/icons.svg#burger"></use>
         </svg>
       </button>
 
       <!-- Header BUY NOW button -->
-      <button class="header__buy-now btn" type="button" some-attribute>
+      <button
+        class="header__buy-now btn"
+        type="button"
+        some-attribute
+        data-modal-open="0"
+      >
         Buy now
         <svg width="12" height="12">
           <use href="./icons/icons.svg#arrowhead"></use>
@@ -45,36 +50,45 @@
 <!-- Header navigation sliding menu -->
 <!-- -------------------------------------------------------- -->
 <div class="header__sliding-menu">
-  <a href="./index.html" class="header__logo-link">
-    <img
-      src="./images/header/logo-header.png"
-      alt="Logo og the Ice Cream Company"
-    />
-  </a>
-  <button type="button">
-    <svg width="32" height="32">
-      <use href="./icons/icons.svg#burger-close"></use>
-    </svg>
-  </button>
+  <div class="header__slidin-menu-top">
+    <a href="./index.html" class="header__logo-link">
+      <img
+        src="./images/header/logo-header.png"
+        alt="Logo og the Ice Cream Company"
+      />
+    </a>
+    <button
+      type="button"
+      aria-expanded="false"
+      data-menu-close
+      class="header__burger-close"
+    >
+      <svg width="32" height="32">
+        <use href="./icons/icons.svg#burger-close"></use>
+      </svg>
+    </button>
+  </div>
   <ul class="header__nav_list header__nav_list--mobile">
     <li class="header__list-item">
-      <a href="#header">Home</a>
+      <a href="#header" class="header__slider-link">Home</a>
     </li>
     <li class="header__list-item">
-      <a href="#about">How it’s made?</a>
+      <a href="#about" class="header__slider-link current">How it’s made?</a>
     </li>
     <li class="header__list-item">
-      <a href="#products">Our products</a>
+      <a href="#products" class="header__slider-link">Our products</a>
     </li>
     <li class="header__list-item">
-      <a href="#contacts">Contact</a>
+      <a href="#contacts" class="header__slider-link">Contact</a>
     </li>
   </ul>
-  <button class="btn" type="submit" some-attribute>
-    Buy now
-    <svg width="12" height="12">
-      <use href="./icons/icons.svg#arrowhead"></use>
-    </svg>
-  </button>
+  <div class="header__sliding-menu-bottom">
+    <button class="btn" type="submit" some-attribute>
+      Buy now
+      <svg width="12" height="12">
+        <use href="./icons/icons.svg#arrowhead"></use>
+      </svg>
+    </button>
+  </div>
 </div>
 <!-- -------------------------------------------------------- -->
