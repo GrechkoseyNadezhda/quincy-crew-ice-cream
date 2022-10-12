@@ -10,7 +10,7 @@
           natural stabilizer
         </p>
         <button type="button" class="product-card__button">
-          <svg class="product-card__icon" width="40" height="14">
+          <svg class="product-card__icon">
             <use href="./icons/icons.svg#arrow"></use>
           </svg>
         </button>
@@ -22,7 +22,7 @@
           without the use of preservatives and flavor enhancers
         </p>
         <button type="button" class="product-card__button">
-          <svg class="product-card__icon" width="40" height="14">
+          <svg class="product-card__icon">
             <use href="./icons/icons.svg#arrow"></use>
           </svg>
         </button>
@@ -34,7 +34,7 @@
           fruits, berries and other sweets of your choice
         </p>
         <button type="button" class="product-card__button">
-          <svg class="product-card__icon" width="40" height="14">
+          <svg class="product-card__icon">
             <use href="./icons/icons.svg#arrow"></use>
           </svg>
         </button>
@@ -42,3 +42,56 @@
     </ul>
   </div>
 </section>
+
+<!-- Modal-Ingredients -->
+<div class="backdrop">
+  <div class="modal-ingredients">
+    <button class="modal-btn">
+      <svg class="close-icon" width="12" height="12">
+        <use href="../src/icons/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <h2 class="modal-ingredients__heading title">Chololate icecream</h2>
+    <ul class="grid-ingredients">
+      <li class="grid-ingredients__item">
+        <p class="grid-ingredients_weight">320</p>
+        <span class="grid-ingredients__name">kcal</span>
+      </li>
+      <li class="grid-ingredients__item">
+        <p class="grid-ingredients_weight">4g</p>
+        <span class="grid-ingredients__name">Prote...</span>
+      </li>
+      <li class="grid-ingredients__item">
+        <p class="grid-ingredients_weight">8,2g</p>
+        <span class="grid-ingredients__name">Fats</span>
+      </li>
+      <li class="grid-ingredients__item">
+        <p class="grid-ingredients_weight">40,4g</p>
+        <span class="grid-ingredients__name">Carbs</span>
+      </li>
+    </ul>
+
+    <h3 class="modal-ingredients__subtitle">Ingredients</h3>
+    <ul class="list-ingredients">
+      <li class="list-ingredients__item">
+        <span>Milk</span><span>100ml</span>
+      </li>
+      <li class="list-ingredients__item">
+        <span>Belgian chocolate</span><span>20g</span>
+      </li>
+      <li class="list-ingredients__item">
+        <span>Cream</span><span>150 ml</span>
+      </li>
+      <li class="list-ingredients__item">
+        <span>Cocoa powder</span><span>30g</span>
+      </li>
+      <li class="list-ingredients__item"><span>Sugar</span><span>40g</span></li>
+      <li class="list-ingredients__item">
+        <span>Vanilla sugar</span><span>10g</span>
+      </li>
+    </ul>
+
+    <include src="./partials/form.html"></include>
+  </div>
+</div>
