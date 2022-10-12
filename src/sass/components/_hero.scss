@@ -1,13 +1,18 @@
-.hero__left-side {
-  margin-top: 46px;
+.hero {
+  padding-top: 60px;
 
   @media screen and (min-width: 768px) {
-    margin-right: auto;
-    margin-top: 12px;
+    padding-top: 30px;
   }
 
   @media screen and (min-width: 1200px) {
-    margin-top: 26px;
+    padding-top: 45px;
+  }
+}
+
+.hero__left-side {
+  @media screen and (min-width: 768px) {
+    margin-right: auto;
   }
 }
 
@@ -105,13 +110,18 @@
 
 .hero__ice-cream {
   position: absolute;
-  height: 425px;
-  left: 14%;
-  bottom: -69px;
+  height: 325px;
+  left: 16%;
+  bottom: -53px;
+
+  @media screen and (min-width: 480px) {
+    height: 390px;
+    bottom: -64px;
+  }
 
   @media screen and (min-width: 768px) {
-    height: 490px;
-    bottom: -61px;
+    height: 470px;
+    bottom: -59px;
     left: 45%;
   }
 
@@ -192,6 +202,15 @@
   }
 }
 
+.contour-btn--smaller:focus .hero__link-products {
+  color: $light-color;
+}
+
+.invisible-btn--smaller:hover .hero__link-how-its,
+.invisible-btn--smaller:focus .hero__link-how-its {
+  color: $active-color;
+}
+
 .invisible-btn--arrow {
   padding: 0;
 
@@ -211,6 +230,14 @@
 
 .hero__link-products {
   color: $page-color;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: calc(10 / 8);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: calc(18 / 14);
+  }
 }
 
 .hero__link-how-its {
