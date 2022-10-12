@@ -176,9 +176,9 @@
   &__block {
     display: block;
     position: absolute;
-    top: 50%;
+    top: 50px;
     left: 50%;
-    transform: translateX(-50%, -50%);
+    transform: translateX(-50%);
     z-index: 500;
     width: 280px;
     padding: 28px;

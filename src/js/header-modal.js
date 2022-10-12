@@ -5,12 +5,14 @@ const refs = {
   modal: document.querySelectorAll("[data-modal]"),
   body: document.body,
   };
-  
+        console.log(refs.openModalBtn);
+      console.log(refs.closeModalBtn);
+      console.log(refs.modal);
   let index = 0;
 
   for (let openBtn of refs.openModalBtn) {
     openBtn.onclick = () => {
-      console.log(openBtn.dataset.modalOpen);
+
       index = +openBtn.dataset.modalOpen;
       openSomeModal(index);
     };

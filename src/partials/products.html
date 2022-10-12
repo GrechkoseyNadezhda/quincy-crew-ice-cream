@@ -9,7 +9,7 @@
           Soft ice cream with a delicate taste. Made with milk, cream, sugar and
           natural stabilizer
         </p>
-        <button type="button" class="product-card__button">
+        <button type="button" class="product-card__button" data-modal-open="1">
           <svg class="product-card__icon">
             <use href="./icons/icons.svg#arrow"></use>
           </svg>
@@ -21,7 +21,7 @@
           Fragrant invigorating drink created from 100% natural ingredients
           without the use of preservatives and flavor enhancers
         </p>
-        <button type="button" class="product-card__button">
+        <button type="button" class="product-card__button" data-modal-open="1">
           <svg class="product-card__icon">
             <use href="./icons/icons.svg#arrow"></use>
           </svg>
@@ -33,7 +33,7 @@
           Sweet drinks based on milk and ice cream, supplemented with syrups,
           fruits, berries and other sweets of your choice
         </p>
-        <button type="button" class="product-card__button">
+        <button type="button" class="product-card__button" data-modal-open="1">
           <svg class="product-card__icon">
             <use href="./icons/icons.svg#arrow"></use>
           </svg>
@@ -44,9 +44,9 @@
 </section>
 
 <!-- Modal-Ingredients -->
-<div class="backdrop">
+<div class="backdrop is-hidden" data-modal="1">
   <div class="modal-ingredients">
-    <button class="modal-btn">
+    <button class="modal-btn" data-modal-close="1">
       <svg class="close-icon" width="12" height="12">
         <use href="../src/icons/icons.svg#icon-close"></use>
       </svg>
