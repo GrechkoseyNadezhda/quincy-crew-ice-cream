@@ -105,20 +105,20 @@
 
 .hero__ice-cream {
   position: absolute;
-  height: 288px;
-  left: 22%;
-  bottom: -37px;
+  height: 425px;
+  left: 14%;
+  bottom: -69px;
 
   @media screen and (min-width: 768px) {
-    height: 462px;
-    bottom: -56px;
-    left: 47%;
+    height: 490px;
+    bottom: -61px;
+    left: 45%;
   }
 
   @media screen and (min-width: 1200px) {
     height: 760px;
-    bottom: -92px;
-    left: 48%;
+    bottom: -100px;
+    left: 45%;
   }
 }
 
@@ -170,14 +170,16 @@
 .hero__buttons {
   display: flex;
   gap: 8px;
+  position: relative;
+  z-index: 10;
 }
 .hero__buttons--smaller {
   width: 62px;
   height: 24px;
 }
 
-.contour-btn,
-.invisible-btn {
+.contour-btn--smaller,
+.invisible-btn--smaller {
   @media screen and (max-width: 1199px) {
     font-weight: 600;
     font-size: 8px;
@@ -217,35 +219,41 @@
 }
 
 // ----------------------------
-// FRAME
+// FRAME: DOTS
 // ----------------------------
 .hero .container {
   position: relative;
   background-image: url('../images/hero/frame_mobile@1x.png');
-  // Ця штука нижче чомусь не працює
-  // background-image: -webkit-image-set(
-  //   url('../images/hero/frame_mobile@1x.png') 1x,
-  //   url('../images/hero/frame_mobile@2x.png') 2x
-  // );
-  // background-image: image-set(
-  //   url('../images/hero/frame_mobile@1x.png') 1x,
-  //   url('../images/hero/frame_mobile@2x.png') 2x
-  // );
-
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: contain;
 
   @media screen and (min-width: 768px) {
     display: flex;
-    background-image: url('../images/hero/frame_tablet@1x.png');
     height: 350px;
+    background-image: url('../images/hero/frame_tablet@1x.png');
   }
 
   @media screen and (min-width: 1200px) {
     display: flex;
-
-    background-image: url('../images/hero/frame_desktop@1x.png');
     height: 572px;
+    background-image: url('../images/hero/frame_desktop@1x.png');
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero .container {
+    background-image: url('../images/hero/frame_mobile@2x.png');
+
+    @media screen and (min-width: 768px) {
+      background-image: url('../images/hero/frame_tablet@2x.png');
+    }
+
+    @media screen and (min-width: 1200px) {
+      background-image: url('../images/hero/frame_desktop@2x.png');
+    }
   }
 }
