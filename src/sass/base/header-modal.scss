@@ -1,7 +1,25 @@
-// .backdrop {
-// }
-// .is-hidden {
-// }
+.backdrop {
+  position: fixed;
+  opacity: 1;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  @include transition-slow(opasity);
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  @include transition-slow(opasity);
+}
+
+.overflow {
+  overflow: hidden;
+}
+
 .header-modal {
   position: relative;
   margin: 0 auto;
