@@ -9,12 +9,57 @@
     background-color: #e1e1e1;
     left: 0;
     bottom: 120px;
+
+    @media screen and(min-width: 768px) {
+      bottom: 53px;
+    }
+
+    @media screen and(min-width: 1200px) {
+      bottom: 45px;
+    }
   }
 }
 
 .footer-section {
   padding-top: 39px;
   padding-bottom: 62px;
+
+  @media screen and(min-width: 768px) {
+    padding-top: 40px;
+    padding-bottom: 13px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    padding-top: 120px;
+    padding-bottom: 11px;
+  }
+}
+
+.footer-group {
+  margin-bottom: 40px;
+
+  @media screen and(min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 46px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    margin-bottom: 66px;
+  }
+}
+
+.footer-section__title {
+  max-width: 238px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 352px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 504px;
+  }
 }
 
 .footer-section__title--small {
@@ -27,10 +72,12 @@
 
   @media screen and(min-width: 768px) {
     font-size: 26px;
+    margin-bottom: 9px;
   }
 
   @media screen and(min-width: 1200px) {
     font-size: 30px;
+    margin-bottom: 14px;
   }
 }
 
@@ -45,10 +92,21 @@
 
   @media screen and(min-width: 768px) {
     font-size: 48px;
+    margin-bottom: 0px;
   }
 
   @media screen and(min-width: 1200px) {
     font-size: 58px;
+  }
+}
+
+.social-contacts {
+  @media screen and(min-width: 768px) {
+    margin-top: 68px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    margin-top: 0;
   }
 }
 
@@ -57,18 +115,45 @@
   gap: 28px;
   justify-content: flex-end;
   margin-bottom: 38px;
+
+  @media screen and(min-width: 768px) {
+    gap: 30px;
+    margin-bottom: 32px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    margin-bottom: 40px;
+  }
 }
 
 .social__icon {
   fill: $main-bg-color;
   width: 32px;
   height: 32px;
+
+  @media screen and(min-width: 768px) {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+.social__link {
+  &:focus .social__icon {
+    fill: $light-color;
+    width: 38px;
+    height: 38px;
+  }
+
+  &:hover .social__icon {
+    fill: $light-color;
+    width: 32px;
+    height: 32px;
+  }
 }
 
 .social-contacts__phone {
   display: block;
   text-align: right;
-  margin-bottom: 40px;
 
   font-size: 12px;
   font-weight: 700;
@@ -77,6 +162,11 @@
 
   @media screen and(min-width: 768px) {
     font-size: 14px;
+    text-align: right;
+  }
+
+  @media screen and(min-width: 1200px) {
+    font-size: 16px;
   }
 }
 
@@ -95,4 +185,13 @@
   text-align: center;
 
   color: #7a7a7a;
+
+  @media screen and(min-width: 768px) {
+    line-height: 1.86;
+    max-width: none;
+  }
+
+  @media screen and(min-width: 1200px) {
+    font-size: 12px;
+  }
 }

@@ -1,13 +1,11 @@
 @import './common';
-
 @import './utils/variables';
 @import './utils/reset';
 @import './utils/mixins';
-
 @import './base/btns';
 @import './base/titles';
 @import './base/form';
-
+@import './base/header-modal.scss';
 @import './components/header';
 @import './components/hero';
 @import './components/products';
