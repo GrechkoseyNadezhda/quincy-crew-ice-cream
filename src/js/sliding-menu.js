@@ -2,11 +2,13 @@
     const mobileMenu = document.querySelector(".header__sliding-menu");
     const menuBtnOpen = document.querySelector("[data-menu-open]");
     const menuBtnClose = document.querySelector('[data-menu-close]');
+    const body = document.body;
     menuBtnOpen.addEventListener("click", () => {
         console.log(mobileMenu);
         const expanded = menuBtnOpen.getAttribute("aria-expanded") === "true" || false;
         mobileMenu.classList.toggle("is-open");
         menuBtnOpen.setAttribute("aria-expanded", !expanded);
+        body.classList.add('overflow');
     });
     menuBtnClose.addEventListener('click', () => {
         const expanded = menuBtnOpen.getAttribute('aria-expanded') === 'false' || true;
