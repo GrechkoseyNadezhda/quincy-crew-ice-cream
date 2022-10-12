@@ -123,6 +123,9 @@
       justify-content: center;
       gap: 16px;
     }
+  }
+  &__btn {
+    font-size: 14px;
     &--orange {
       margin: 0 auto;
       margin-bottom: 16px;
@@ -139,7 +142,6 @@
       }
     }
   }
-
   &__icon {
     margin-left: 6px;
     .contacts__btn:focus & {

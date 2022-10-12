@@ -2,6 +2,7 @@ const slides = document.querySelectorAll(".customer-reviews__item");
 const navs = document.querySelectorAll(".customer-reviews__nav");
 let currentSlide = 0;
 
+
 function changeSlide(num) {
   for (let i = 0; i < slides.length; i++) {
     slides[i].classList.remove("active");

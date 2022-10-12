@@ -94,13 +94,19 @@
       </li>
     </ul>
     <div class="contacts__btn-wrap">
-      <button class="btn contacts__btn contacts__btn--orange">
+      <button
+        class="btn contacts__btn contacts__btn--orange"
+        data-modal-open="1"
+      >
         Our Locations
         <svg class="contacts__icon" width="12" height="12">
           <use href="./icons/icons.svg#arrowhead"></use>
         </svg>
       </button>
-      <button class="contour-btn contacts__btn contacts__btn--transparent">
+      <button
+        class="contour-btn contacts__btn contacts__btn--transparent"
+        data-modal-open="2"
+      >
         Franchise
         <svg class="contacts__icon" width="12" height="12">
           <use href="./icons/icons.svg#arrowhead"></use>
@@ -110,9 +116,9 @@
   </div>
 </section>
 
-<div class="location location__backdrop is-hidden" data-modal>
+<div class="location location__backdrop is-hidden" data-modal="1">
   <div class="location__block">
-    <button class="location__modal-btn" type="button" data-modal-close>
+    <button class="location__modal-btn" type="button" data-modal-close="1">
       <svg class="location__close-modal" width="20" height="20">
         <use href="./icons/icons.svg#close"></use>
       </svg>
@@ -137,9 +143,9 @@
   </div>
 </div>
 
-<div class="franchise__backdrop is-hidden" data-modal>
+<div class="franchise__backdrop is-hidden" data-modal="2">
   <div class="franchise">
-    <button class="franchise__modal-btn" type="button" data-modal-close>
+    <button class="franchise__modal-btn" type="button" data-modal-close="2">
       <svg class="franchise__close-modal" width="20" height="20">
         <use href="./icons/icons.svg#close"></use>
       </svg>
