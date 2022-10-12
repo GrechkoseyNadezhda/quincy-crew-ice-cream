@@ -230,6 +230,14 @@
 
 .hero__link-products {
   color: $page-color;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: calc(10 / 8);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: calc(18 / 14);
+  }
 }
 
 .hero__link-how-its {

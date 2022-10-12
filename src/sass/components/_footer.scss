@@ -1,6 +1,20 @@
 .footer {
+  padding-top: 39px;
+  padding-bottom: 62px;
+
+  @media screen and(min-width: 768px) {
+    padding-top: 40px;
+    padding-bottom: 13px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    padding-top: 120px;
+    padding-bottom: 11px;
+  }
+}
+
+.footer-wrap {
   position: relative;
-  background-color: $main-bg-color;
   &::after {
     content: '';
     position: absolute;
@@ -17,21 +31,6 @@
     @media screen and(min-width: 1200px) {
       bottom: 45px;
     }
-  }
-}
-
-.footer-section {
-  padding-top: 39px;
-  padding-bottom: 62px;
-
-  @media screen and(min-width: 768px) {
-    padding-top: 40px;
-    padding-bottom: 13px;
-  }
-
-  @media screen and(min-width: 1200px) {
-    padding-top: 120px;
-    padding-bottom: 11px;
   }
 }
 

@@ -15,5 +15,6 @@
         menuBtnOpen.classList.toggle('is-open');
         menuBtnOpen.setAttribute('aria-expanded', !expanded);
         mobileMenu.classList.toggle('is-open');
+        body.classList.remove('overflow');
     });
 })();
