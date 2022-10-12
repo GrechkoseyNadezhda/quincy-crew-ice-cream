@@ -7,9 +7,6 @@ const refs = {
   };
   
   let index = 0;
-  console.log(refs.openModalBtn);
-  console.log(refs.closeModalBtn);
-  console.log(refs.modal);
 
   for (let openBtn of refs.openModalBtn) {
     openBtn.onclick = () => {
@@ -34,7 +31,6 @@ const refs = {
     };
     
     function closeSomeModal(num) {
-
       refs.modal[num].classList.add("is-hidden");
       refs.body.classList.remove('overflow');
   }
