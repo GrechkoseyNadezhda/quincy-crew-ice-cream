@@ -1,6 +1,40 @@
 .products {
   padding-top: 60px;
   padding-bottom: 60px;
+  background-image: url(../images/products/bg_sm.jpg);
+  background-repeat: repeat;
+  background-size: contain;
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/products/bg_sm@2x.jpg);
+  }
+
+  @media screen and(min-width: 768px) {
+    background-image: url(../images/products/bg_md.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/products/bg_md@2x.jpg);
+    }
+  }
+
+  @media screen and(min-width: 1200px) {
+    background-image: url(../images/products/bg_ld.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/products/bg_ld@2x.jpg);
+    }
+  }
 }
 
 .products-list {
