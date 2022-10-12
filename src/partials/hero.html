@@ -1,34 +1,59 @@
 <section class="section hero">
   <div class="container">
     <div class="hero__left-side">
-      <h1 class="hero__title">ice cream made with passion</h1>
-      <div>
-        <button class="contour-btn">
-          <a href="#products">Products</a>
+      <h1 class="hero__title">
+        ice cream made with <span class="hero__passion">passion</span>
+      </h1>
+
+      <div class="hero__buttons">
+        <button class="contour-btn contour-btn--smaller">
+          <a class="hero__link-products" href="#products">Products</a>
         </button>
-        <button class="invisible-btn">
-          <a href="#about">How it’s made?</a>
+        <button class="invisible-btn invisible-btn--smaller">
+          <a class="hero__link-how-its" href="#about">How it’s made?</a>
         </button>
+      </div>
+      <div class="hero__lorem-block">
         <img
           src="./images/hero/many-ice-creams.png"
           alt="Many ice Creams on the plate"
+          class="hero__ice-cream-plate"
         />
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et
-        </p>
-        <button class="menu-btn" data-menu-button>
-          <svg width="32" height="32">
-            <use href="./icons/icons.svg#arrow"></use>
-          </svg>
-        </button>
+        <div class="hero__lorem-ipsum">
+          <p class="hero__lorem-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et
+          </p>
+          <button class="invisible-btn invisible-btn--arrow" data-menu-button>
+            <svg width="32" height="40" class="hero__arrowhead-icon">
+              <use href="./icons/icons.svg#arrow"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
 
     <div class="hero__right-side">
-      <img src="./images/hero/ice-cream.png" alt="" />
-      <p><span>16</span> cafes</p>
-      <p><span>23</span> food trucks</p>
+      <img
+        srcset="
+          ./images/hero/ice-cream.png            480w,
+          ./images/hero/ice-cream_tablet@1x.png  768w,
+          ./images/hero/ice-cream_tablet@1x.png 1200w
+        "
+        sizes="480px"
+        src="./images/hero/ice-cream.png"
+        alt="Ice Creame Company"
+        class="hero__ice-cream"
+      />
+
+      <div class="hero__advantages">
+        <p class="hero__advant-text">
+          <span class="hero__advant-span">16<br /></span> cafes
+        </p>
+        <p class="hero__advant-text">
+          <span class="hero__advant-span">23<br /></span> food trucks
+        </p>
+      </div>
     </div>
   </div>
 </section>
