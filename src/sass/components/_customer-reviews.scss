@@ -86,23 +86,22 @@
   &__navs {
     display: flex;
     height: 24px;
-    gap: 8px;
+    gap: 12px;
     justify-content: center;
     align-items: center;
   }
 
   &__nav {
     cursor: pointer;
-    z-index: 2;
-    width: 8px;
-    height: 8px;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
     background: #d9d9d9;
-    @include transition(scale(2));
+    @include transition(transform);
+
     &.active {
       background: $main-bg-color;
-      width: 12px;
-      height: 12px;
+      transform: scale(1.75);
     }
   }
 }
