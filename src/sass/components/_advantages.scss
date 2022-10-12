@@ -5,6 +5,12 @@
     flex-direction: column;
     text-align: center;
     color: #FCFCFC;
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        padding-bottom: 40px;
+        gap: 80px;
+        justify-content: space-around;
+    }
 }
 
 .advantages__item {
@@ -21,6 +27,9 @@
     width: 50px;
     height: 50px;
     background-image: url(../images/advantages/cow.png);
+    @media screen and (min-width: 768px) {
+        margin-bottom: 32px;
+    }
 }
 
 .weight::before {
@@ -31,6 +40,9 @@
     width: 50px;
     height: 50px;
     background-image: url(../images/advantages/weight.png);
+    @media screen and (min-width: 768px) {
+        margin-bottom: 32px;
+    }
 }
 
 .ice::before {
@@ -41,6 +53,9 @@
     width: 50px;
     height: 50px;
     background-image: url(../images/advantages/ice.png);
+    @media screen and (min-width: 768px) {
+        margin-bottom: 32px;
+    }
 }
 
 .advantages__uppertext {
@@ -61,4 +76,10 @@
     text-align: center;
     padding-left: 15px;
     padding-right: 15px;
+    @media screen and (min-width: 768px) {
+        max-width: 152px;
+    }
+    @media screen and (min-width: 1200px) {
+        max-width: 300px;
+    }
 }
