@@ -1,73 +1,74 @@
 <section class="about" id="about">
-  <div class="container">
-    <p class="about__subtitle">TRADITION AND LOVE</p>
-    <h2 class="about__title">HOW IT'S MADE?</h2>
-    <div class="about__wrapper">
-      <div class="about__wrap">
-        <picture class="about__image">
-          <source
-            srcset="
+    <div class="container">
+        <p class="about__subtitle">TRADITION AND LOVE</p>
+        <h2 class="about__title">HOW IT'S MADE?</h2>
+        <div class="about__wrapper">
+            <div class="about__wrap">
+                <picture class="about__image">
+                    <source srcset="
               ./images/about/cow-d@1x.png 1x,
               ./images/about/cow-d@2x.png 2x
-            "
-            media="(min-width:1200px)"
-          />
-          <source
-            srcset="
+            " media="(min-width:1200px)" />
+                    <source srcset="
               ./images/about/cow-t@1x.png 1x,
               ./images/about/cow-t@2x.png 2x
-            "
-            media="(min-width:768px)"
-          />
-          <source
-            srcset="
+            " media="(min-width:768px)" />
+                    <source srcset="
               ./images/about/cow-m@1x.png 1x,
               ./images/about/cow-m@2x.png 2x
-            "
-            media="(min-width:320px)"
-          />
+            " media="(min-width:320px)" />
 
-          <img
-            srcset="
+                    <img srcset="
               ./images/about/cow-d@1x.png 1x,
               ./images/about/cow-d@2x.png 2x
-            "
-            src="./images/about/cow-d@1x.png"
-            alt="Sweet Cow"
-            loading="lazy"
-          />
-        </picture>
-      </div>
-      <div class="about__textwrap">
-        <ul class="textwrap-list">
-          <li class="textwrap-item">
-            <p class="about__text">
-              Ice is a place where you will become not only a little happier,
-              but also healthier. Health is the main value for us, and we follow
-              it when creating our handmade desserts.
-            </p>
-          </li>
-          <li class="textwrap-item">
-            <p class="about__text">
-              We use traditional recipes and 100% natural ingredients. Our
-              products are so natural that they can be given to children from
-              the age of three years. Sweets lovers can expect 55 types of ice
-              cream, 15 types of coffee and 23 milkshakes.
-            </p>
-          </li>
-          <li class="textwrap-item">
-            <p class="about__text">
-              This is enough to choose ice cream and coffee for any mood!
-            </p>
-          </li>
-        </ul>
-        <button type="button" class="about__button btn">
+            " src="./images/about/cow-d@1x.png" alt="Sweet Cow" loading="lazy" />
+                </picture>
+            </div>
+            <div class="about__textwrap">
+                <ul class="textwrap-list">
+                    <li class="textwrap-item">
+                        <p class="about__text">
+                            Ice is a place where you will become not only a little happier, but also healthier. Health is the main value for us, and we follow it when creating our handmade desserts.
+                        </p>
+                    </li>
+                    <li class="textwrap-item">
+                        <p class="about__text">
+                            We use traditional recipes and 100% natural ingredients. Our products are so natural that they can be given to children from the age of three years. Sweets lovers can expect 55 types of ice cream, 15 types of coffee and 23 milkshakes.
+                        </p>
+                    </li>
+                    <li class="textwrap-item">
+                        <p class="about__text">
+                            This is enough to choose ice cream and coffee for any mood!
+                        </p>
+                    </li>
+                </ul>
+                <button type="button" class="about__button btn" data-modal="">
           Read more
           <svg class="about__icon" width="12" height="12">
             <use href="./icons/icons.svg#about__icon"></use>
           </svg>
         </button>
-      </div>
+            </div>
+        </div>
     </div>
-  </div>
 </section>
+
+<div class="backdrop " data-modal="">
+    <div class="about__modal">
+        <button class="modal-btn" data-modal-close=""><svg class="modal-icon-close" width="18" height="18">
+        <use href="./icons/icons.svg#icon-close"></use>
+
+      </svg>
+</button>
+
+        <h2 class="about__modal-title">How it’s made?</h2>
+        <div class="about__videowrap">
+            <video class="about__modal-video" src="https://www.youtube.com/watch?v=nzyTf9Ym-Zo&ab_channel=%D0%9A%D0%90%D0%9A%D0%AD%D0%A2%D0%9E%D0%94%D0%95%D0%9B%D0%90%D0%AE%D0%A2%3F
+          " poster="./images/gallery/ice-cream11.jpg" width="448px" height="205px" controls autoplay preload="none"></video>
+        </div>
+        <p class="about__modal-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        </p>
+
+    </div>
+</div>
