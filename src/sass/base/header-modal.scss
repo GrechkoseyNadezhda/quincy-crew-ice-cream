@@ -8,13 +8,13 @@
   height: 100%;
   overflow-y: scroll;
   background-color: rgba(0, 0, 0, 0.2);
-  @include transition-slow(opasity);
+  @include transition-slow(opacity);
 }
 
 .is-hidden {
   opacity: 0;
   pointer-events: none;
-  @include transition-slow(opasity);
+  @include transition-slow(opacity);
 }
 
 .overflow {
