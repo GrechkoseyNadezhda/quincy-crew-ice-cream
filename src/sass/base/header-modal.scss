@@ -85,7 +85,18 @@
     text-transform: uppercase;
     color: $page-color;
   }
+
+  // .checkbox__input {
+  //   appearance: none;
+  //   position: absolute;
+  // }
 }
+
+// .checkbox-policy__input:checked ~ .checkbox-policy__label > & {
+//   fill: $page-white-color;
+//   background-color: $accent-color;
+//   border-color: $accent-color;
+// }
 
 .header-modal__close-btn {
   position: absolute;
