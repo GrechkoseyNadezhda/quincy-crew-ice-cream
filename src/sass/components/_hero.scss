@@ -82,9 +82,21 @@
 .hero__ice-cream-plate {
   width: 152px;
 
+  // animation
+  scale: 1;
+  transition-property: transform;
+  transition-duration: 400ms;
+  transition-timing-function: linear;
+  transition-delay: 50ms;
+  // end animation
+
   @media screen and (min-width: 1200px) {
     width: 225px;
   }
+}
+
+.hero__ice-cream-plate:hover {
+  transform: scale(1.05) rotate(deg);
 }
 
 .hero__lorem-text {
