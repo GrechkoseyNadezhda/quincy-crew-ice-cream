@@ -85,7 +85,7 @@
   // animation
   scale: 1;
   transition-property: transform;
-  transition-duration: 400ms;
+  transition-duration: 500ms;
   transition-timing-function: linear;
   transition-delay: 50ms;
   // end animation
@@ -96,7 +96,7 @@
 }
 
 .hero__ice-cream-plate:hover {
-  transform: scale(1.05) rotate(20deg);
+  transform: scale(1.05) rotate(360deg);
 }
 
 .hero__lorem-text {
