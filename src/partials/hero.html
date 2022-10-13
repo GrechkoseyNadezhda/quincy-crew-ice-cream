@@ -2,16 +2,23 @@
   <div class="container">
     <div class="hero__left-side">
       <h1 class="hero__title">
-        ice cream made with <span class="hero__passion">passion</span>
+        ice cream made with
+        <span class="hero__passion">passion</span>
       </h1>
 
       <div class="hero__buttons">
-        <button class="contour-btn contour-btn--smaller">
-          <a class="hero__link-products" href="#products">Products</a>
-        </button>
-        <button class="invisible-btn invisible-btn--smaller">
-          <a class="hero__link-how-its" href="#about">How it’s made?</a>
-        </button>
+        <a
+          class="hero__link-products contour-btn contour-btn--smaller"
+          href="#products"
+        >
+          Products
+        </a>
+        <a
+          class="hero__link-how-its invisible-btn invisible-btn--smaller"
+          href="#about"
+        >
+          How it’s made?
+        </a>
       </div>
       <div class="hero__lorem-block">
         <picture>
@@ -43,7 +50,12 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et
           </p>
-          <button class="invisible-btn invisible-btn--arrow" data-menu-button>
+          <button
+            class="invisible-btn invisible-btn--arrow"
+            type="button"
+            some-attribute
+            data-modal-open="0"
+          >
             <svg width="32" height="40" class="hero__arrowhead-icon">
               <use href="./icons/icons.svg#arrow"></use>
             </svg>
@@ -58,7 +70,7 @@
           media="(min-width: 1200px)"
           srcset="
             ./images/hero/ice-cream_desktop@1x.png 1x,
-            ./images/hero/ice-cream_desktop@1x.png 2x
+            ./images/hero/ice-cream_desktop@2x.png 2x
           "
           type="image/png"
         />
@@ -66,7 +78,7 @@
           media="(min-width: 768px)"
           srcset="
             ./images/hero/ice-cream_tablet@1x.png 1x,
-            ./images/hero/ice-cream_tablet@1x.png 2x
+            ./images/hero/ice-cream_tablet@2x.png 2x
           "
           type="image/png"
         />
@@ -74,14 +86,14 @@
           media="(min-width: 480px)"
           srcset="
             ./images/hero/ice-cream_mobile@1x.png 1x,
-            ./images/hero/ice-cream_mobile@1x.png 2x
+            ./images/hero/ice-cream_mobile@2x.png 2x
           "
           type="image/png"
         />
         <img
           src="./images/hero/ice-cream_mobile@1x.png"
           alt="Ice Creame Company"
-          class="hero__ice-cream"
+          class="hero__ice-cream animate__animated animate__tada"
         />
       </picture>
 
