@@ -61,7 +61,7 @@
             </p>
           </li>
         </ul>
-        <button type="button" class="about__button btn" data-modal="">
+        <button type="button" class="about__button btn" data-modal-open="4">
           Read more
           <svg class="about__icon" width="12" height="12">
             <use href="./icons/icons.svg#about__icon"></use>
@@ -72,27 +72,26 @@
   </div>
 </section>
 
-<div class="backdrop is-hidden" data-modal="">
+<div class="backdrop is-hidden" data-modal="4">
   <div class="about__modal">
-    <button class="modal-btn" data-modal-close="">
-      <svg class="modal-icon-close" width="18" height="18">
+    <button class="header-modal__close-btn" data-modal-close="4">
+      <svg class="header-modal__close-icon" width="18" height="18">
         <use href="./icons/icons.svg#icon-close"></use>
       </svg>
     </button>
 
     <h2 class="about__modal-title">How it’s made?</h2>
     <div class="about__videowrap">
-      <video
-        class="about__modal-video"
-        src="https://www.youtube.com/watch?v=nzyTf9Ym-Zo&ab_channel=%D0%9A%D0%90%D0%9A%D0%AD%D0%A2%D0%9E%D0%94%D0%95%D0%9B%D0%90%D0%AE%D0%A2%3F
-          "
-        poster="./images/gallery/ice-cream11.jpg"
-        width="448px"
-        height="205px"
-        controls
-        autoplay
-        preload="none"
-      ></video>
+      <iframe
+        width="448"
+        height="205"
+        src="https://www.youtube.com/embed/JPvjUKT1pcQ"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        target="_blank"
+      ></iframe>
     </div>
     <p class="about__modal-text">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
