@@ -350,16 +350,31 @@
 .backdrop.is-hidden .modal-ingredients--green {
   transform: translateX(-40%) scale(0.3);
   opacity: 0;
+
+  @media screen and(min-width: 768px) {
+    transform: translateX(-120%) scale(0.3);
+    opacity: 0;
+  }
 }
 
 .backdrop.is-hidden .modal-ingredients--yellow {
-  transform: translateX(0%) scale(0.3);
+  transform: translateX(-40%) scale(0.3);
   opacity: 0;
+
+  @media screen and(min-width: 768px) {
+    transform: translateX(-40%) scale(0.3);
+    opacity: 0;
+  }
 }
 
 .backdrop.is-hidden .modal-ingredients--brown {
-  transform: translateX(40%) scale(0.3);
+  transform: translateX(-40%) scale(0.3);
   opacity: 0;
+
+  @media screen and(min-width: 768px) {
+    transform: translateX(40%) scale(0.3);
+    opacity: 0;
+  }
 }
 
 .modal-btn {
