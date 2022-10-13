@@ -15,14 +15,44 @@
 
   @media screen and (min-width: 480px) {
     background-size: 100% 60px, 100% 1065px, contain;
+    background-image: linear-gradient(to bottom, $main-bg-color, $main-bg-color),
+      linear-gradient(to bottom, $main-bg-color, $main-bg-color),
+      url(/src/images/сustomer-reviews/review-bg.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(/src/images/сustomer-reviews/review-bg@2x.jpg);
+    }
   }
 
   @media screen and (min-width: 768px) {
     background-size: 100% 164px, 100% 326px, contain;
+    background-image: linear-gradient(to bottom, $main-bg-color, $main-bg-color),
+      linear-gradient(to bottom, $main-bg-color, $main-bg-color),
+      url(/src/images/сustomer-reviews/review-bg.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(/src/images/сustomer-reviews/review-bg@2x.jpg);
+    }
   }
 
   @media screen and (min-width: 1200px) {
     background-size: 100% 94px, 100% 548px, contain;
+    background-image: linear-gradient(to bottom, $main-bg-color, $main-bg-color),
+      linear-gradient(to bottom, $main-bg-color, $main-bg-color),
+      url(/src/images/сustomer-reviews/review-bg.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(/src/images/сustomer-reviews/review-bg@2x.jpg);
+    }
   }
 }
 
