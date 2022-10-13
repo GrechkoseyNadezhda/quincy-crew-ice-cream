@@ -324,7 +324,7 @@
   position: absolute;
   top: 50px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) scale(1);
   z-index: 500;
 
   opacity: 1;
@@ -336,12 +336,44 @@
   border: 2px solid $accent-color;
   border-radius: 10px;
 
+  transition: transform 500ms, opacity 500ms;
+
   .modal-form__label--mail {
     display: none;
   }
 
   @media screen and(min-width: 768px) {
     padding: 32px 40px;
+  }
+}
+
+.backdrop.is-hidden .modal-ingredients--green {
+  transform: translateX(-40%) scale(0.3);
+  opacity: 0;
+
+  @media screen and(min-width: 768px) {
+    transform: translateX(-120%) scale(0.3);
+    opacity: 0;
+  }
+}
+
+.backdrop.is-hidden .modal-ingredients--yellow {
+  transform: translateX(-40%) scale(0.3);
+  opacity: 0;
+
+  @media screen and(min-width: 768px) {
+    transform: translateX(-40%) scale(0.3);
+    opacity: 0;
+  }
+}
+
+.backdrop.is-hidden .modal-ingredients--brown {
+  transform: translateX(-40%) scale(0.3);
+  opacity: 0;
+
+  @media screen and(min-width: 768px) {
+    transform: translateX(40%) scale(0.3);
+    opacity: 0;
   }
 }
 
