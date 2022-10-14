@@ -1,4 +1,4 @@
-<div class="backdrop is-hidden" data-modal="0">
+<!-- <div class="backdrop is-hidden" data-modal="0">
   <div class="modal header-modal">
     <button type="button" data-modal-close="0" class="header-modal__close-btn">
       <svg class="header-modal__close-icon" width="11" height="11">
@@ -19,9 +19,9 @@
     </ul>
     <include src="./partials/form.html"></include>
   </div>
-</div>
+</div> -->
 
-<!-- <div class="backdrop is-hidden" data-modal="0">
+<div class="backdrop is-hidden" data-modal="0">
   <div class="modal header-modal">
     <button type="button" data-modal-close="0" class="header-modal__close-btn">
       <svg class="header-modal__close-icon" width="11" height="11">
@@ -29,7 +29,56 @@
       </svg>
     </button>
     <h2 class="header-modal__title title">Buy now</h2>
+
     <ul class="header-modal__list">
+      <li class="header-modal__item">
+        <input
+          id="green"
+          class="checkbox__input checkbox__input--green"
+          type="checkbox"
+          name="buy"
+          value="ice-cream"
+        />
+        <label
+          for="green"
+          class="header-modal__item--green header-modal__text header-modal__text--green"
+        >
+          ice cream
+        </label>
+      </li>
+      <li class="header-modal__item">
+        <input
+          id="yellow"
+          class="checkbox__input checkbox__input--yellow"
+          type="checkbox"
+          name="buy"
+          value=" ice-coffee"
+        />
+        <label
+          for="yellow"
+          class="header-modal__item--yellow header-modal__text header-modal__text--yellow"
+        >
+          ice coffee
+        </label>
+      </li>
+      <li class="header-modal__item">
+        <input
+          id="brown"
+          class="checkbox__input checkbox__input--brown"
+          type="checkbox"
+          name="buy"
+          value="milkshake"
+        />
+        <label
+          for="brown"
+          class="header-modal__item--brown header-modal__text header-modal__text--brown"
+        >
+          milkshake
+        </label>
+      </li>
+    </ul>
+
+    <!-- <ul class="header-modal__list">
       <li class="header-modal__item header-modal__item--green">
         <label class="header-modal__text">
           <input class="checkbox__input" type="checkbox" name="checkbox" />
@@ -40,7 +89,7 @@
       </li>
       <li class="header-modal__item header-modal__item--yellow">
         <label class="header-modal__text">
-          <input class="checkbox__input " type="checkbox" name="checkbox" />
+          <input class="checkbox__input" type="checkbox" name="checkbox" />
           ice coffee
         </label>
         <p class="header-modal__text">ice coffee</p>
@@ -52,7 +101,7 @@
         </label>
         <p class="header-modal__text">milkshake</p>
       </li>
-    </ul>
+    </ul> -->
     <include src="./partials/form.html"></include>
   </div>
-</div> -->
+</div>
